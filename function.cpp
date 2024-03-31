@@ -3,7 +3,7 @@
 
 using namespace std;
  
-void Input(int &n, int &m, int grid[SIZE][SIZE], bool isCorner[SIZE][SIZE]) {
+void input(int &n, int &m, int grid[SIZE][SIZE], bool isCorner[SIZE][SIZE]) {
     cin >> n;
     for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) cin >> grid[i][j];
     cin >> m;
@@ -43,9 +43,9 @@ int main() {
     int grid[SIZE][SIZE];
     bool isCorner[SIZE][SIZE] {{0}};
 
-    Input(n, m, grid, isCorner);
+    input(n, m, grid, isCorner);
 
-    for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) if (isCorner[i][j]) {        
-       identify(i, j, grid); 
-    }
+    for (int i = 0; i < n; i++) for (int j = 0; j < n; j++) 
+        if (isCorner[i][j])         
+            identify(i, j, grid); 
 }
