@@ -14,5 +14,3 @@ class Grid {
     void input();
     void work();
 };
-
-
