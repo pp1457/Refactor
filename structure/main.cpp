@@ -3,7 +3,7 @@ using namespace std;
 
 #include "grid.h"
  
-void Input(Grid &grid) {
+void input(Grid &grid) {
     cin >> grid.n;
     for (int i = 0; i < grid.n; i++) for (int j = 0; j < grid.n; j++) cin >> grid.notEmpty[i][j];
     cin >> grid.m;
@@ -40,7 +40,7 @@ void identify(int x, int y, Grid &grid) {
  
 int main() {
     Grid grid;
-    Input(grid);
+    input(grid);
 
     for (int i = 0; i < grid.n; i++) for (int j = 0; j < grid.n; j++) 
         if (grid.isCorner[i][j])         
